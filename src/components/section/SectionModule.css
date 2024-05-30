@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.festival-sections {
+    max-width: 100%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.title {
+    text-align: center;
+    font-size: 48px;
+    margin-top: 80px;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+    background: linear-gradient(to right, #602C99,#652B98,  #F21378  );
+    background-size: 100% 100%;
+
+
+}
+
+.section {
+    position: relative;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.section::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 5px solid transparent;
+    transition: border-color 0.3s ease;
+    pointer-events: none; /* This ensures the pseudo-element does not interfere with any mouse events */
+}
+
+.section:hover::before {
+    border-color: #0094FF;
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.section-overlay {
+    text-align: left;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: white;
+    padding: 20px;
+    box-sizing:border-box;
+}
+.section-overlay1 {
+    text-align: left;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: flex-start;
+    color: white;
+    padding: 20px;
+}
+
+.section-overlay h2, .section-overlay1 h2 {
+    margin: 30px 0;
+    font-size: 54px;
+}
+
+.section-overlay p, .section-overlay1 p 
+    {
+    margin: 20px 0;
+    color: #D6D6D6;
+    font-size: 38px;
+}
+@media (max-width: 1040px) {
+    .section-overlay p, .section-overlay1 p 
+    {
+        margin: 10px 0;
+        font-size: 1.2em;
+    }
+    .section-overlay h2, .section-overlay1 h2 {
+        margin: 0;
+        font-size: 2em;
+    }
+    
+}
+
+@media (max-width: 2000px) {
+    .section-overlay p, .section-overlay1 p {
+        margin: 20px 0;
+        font-size: 32px;
+        font-weight: 600;
+    }
+    .section-overlay h2 ,    .section-overlay1 h2 {
+
+        margin: 30px 0;
+        font-size: 43px;
+        font-weight: 800;
+    }
+    .section-overlay button ,    .section-overlay1 button {
+
+font-size: 38px !important;
+padding-top: 0 !important;
+margin-top: 0 !important;
+    }
+    
+}
+
+@media (max-width: 1550px) {
+    .section-overlay p ,     .section-overlay1 p {
+
+        margin: 20px 0;
+        font-size: 21px;
+        font-weight: 700;
+    }
+    .section-overlay h2 ,.section-overlay1 h2{
+        margin: 30px 0;
+        font-size: 45px;
+    }
+    .section-overlay button ,     .section-overlay1 button         {
+font-size: 40px !important;
+padding-top: 0 !important;
+margin-top: 0 !important;
+display: flex;
+    }
+    
+}
+@media (max-width: 1120px) {
+    .section-overlay p ,    .section-overlay1 p {
+
+        margin: 15px 0;
+        font-size: 18px;
+    }
+    .section-overlay h2,     .section-overlay1 h2        {
+        margin: 20px 0;
+        font-size: 21px;
+    }
+    .section-overlay button,     .section-overlay1 button {
+
+font-size: 22px !important;
+padding-top: 0 !important;
+margin-top: 0 !important;
+    }
+    
+}
+@media (max-width: 590px) {
+    .section-overlay p ,     .section-overlay1 p {
+
+        margin: 10px 0;
+        font-size: 13px !important;
+    }
+    .section-overlay h2,     .section-overlay1 h2         {
+        margin: 0px 0;
+        font-size: 18px !important;
+    }
+    .section-overlay button,    .section-overlay1 button {
+
+font-size: 13px !important;
+padding-top: 0 !important;
+margin-top: 0 !important;
+    }
+    
+}
+@media (max-width: 406px) {
+    .section-overlay p,    .section-overlay1 p {
+
+        margin: 10px 0;
+        font-size: 13px !important;
+    }
+    .section-overlay h2,    .section-overlay1 h2 {
+
+        margin: 0px 0;
+        font-size: 15px !important;
+    }
+    .section-overlay button ,    .section-overlay1 button {
+
+font-size: 12px !important;
+padding-top: 0 !important;
+margin-top: 0 !important;
+    }
+    
+}
+
+.section-overlay button ,.section-overlay1 button {
+
+    background: none;
+    border: none;
+    padding: 18px 0;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    color: #FF862E;
+    font-size: 48px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    position: relative;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: left;
+    transition: color 0.3s ease;
+}
+
+
+.section-overlay button:hover,.section-overlay1 button:hover 
+    {
+    color: #FF862E;
+    /* text-decoration: underline; */
+}
+
+
+@media (min-width: 1500px) {
+    .section-overlay button:hover,.section-overlay1 button:hover 
+    {
+    color: #FF862E;
+    text-decoration: underline;
+}
+.section-overlay button::after,.section-overlay1 button::after {
+    display: none;
+}
+}
+
+.section-overlay button::after,.section-overlay1 button::after 
+    {
+    content: '';
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background-color: #FF862E;
+    left: 0;
+    top: 25px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.section-overlay button:hover::after ,.section-overlay1 button:hover::after {
+
+    transform: scaleX(1);
+}
+
+/* Media Queries */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .section-overlay, .section-overlay1 {
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-overlay h2 ,    .section-overlay1 h2 {
+
+        font-size: 1.8em;
+    }
+
+    .section-overlay p ,     .section-overlay1 p {
+
+        font-size: 1em;
+    }
+}
+
+/* Phones */
+@media (max-width: 600px) {
+    .title {
+        font-size: 1.5em;
+    }
+
+    .section-overlay,    .section-overlay1 {
+
+        width: 100%;
+        padding: 15px;
+        height: auto;
+    }
+
+    .section-overlay h2 ,    .section-overlay1 h2 {
+
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    .section-overlay p ,    .section-overlay1 p {
+
+        font-size: 0.9em;
+    }
+
+    .section-overlay button ,    .section-overlay1 button {
+
+        font-size: 1.2em;
+        margin-bottom: 15px;
+    }
+}
+
+/* Extra small phones */
+@media (max-width: 425px) {
+    .title {
+        font-size: 1.4em;
+    }
+
+    .section-overlay, .section-overlay1 {
+        width: 100%;
+        padding: 10px;
+        height: auto;
+    }
+
+    .section-overlay h2 ,    .section-overlay1 h2 {
+
+        font-size: 1em;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .section-overlay p ,     .section-overlay1 p {
+        
+        font-size: 0.9em;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .section-overlay button ,    .section-overlay1 button {
+
+        margin: auto;
+        font-size: 1em;
+        width: auto;
+    }
+
+    @media (max-width: 489px) {
+        .section-overlay p,        .section-overlay1 p {
+
+            display: none;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .title {
+            font-size: 1.2em;
+        }
+
+        .section-overlay ,  .section-overlay1 {
+
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .section-overlay h2,        .section-overlay1 h2 {
+
+            font-size: 0.8em;
+        }
+
+        .section-overlay p,         .section-overlay1 p {
+            
+            font-size: 0.3em;
+            display: none;
+        }
+
+        .section-overlay button,        .section-overlay1 button {
+
+            font-size: 0.8em;
+            cursor: pointer;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .title {
+            font-size: 1em;
+        }
+
+        .section-overlay,         .section-overlay1 {
+
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}

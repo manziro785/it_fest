@@ -1,0 +1,22 @@
+.code-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.code-input {
+    background-color: #b0acb9;
+    width: 100px;
+    height: 150px;
+    text-align: center;
+    font-size: 33px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.code-input:focus {
+    border-color: #007bff;
+}

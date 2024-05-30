@@ -1,0 +1,254 @@
+/* montserrat-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-500italic - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 500;
+    src: url('../fonts/montserrat-v26-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/montserrat-v26-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* montserrat-900 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    src: url('../fonts/montserrat-v26-latin-900.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+  font-family:'Montserrat' ;
+}
+.map{
+  margin-bottom: 160px;
+}
+.container {
+  margin-right: 60px;
+  margin-left: 60px;
+}
+.indented {
+  display: inline-block;
+  padding-left: 205px;
+}
+.info{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 100px;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+
+}
+.title-map{
+  margin-bottom: 100px;
+  font-size: 68px;
+  font-weight: 800;
+  font-family: 'Montserrat';
+  color: white;
+}
+.number{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.number img{
+  margin-right: 30px
+}
+.number li{
+  list-style: none;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  
+}
+
+@media (max-width: 2062px) {
+    .title-map {
+        font-size: 50px;
+    }
+    .map-img img {
+        width: 100%;
+        min-width: 60%
+    }
+    .map-img  {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+
+    }
+    .info {
+        padding: 0;
+    }
+}
+@media (max-width: 1655px) {
+    .title-map {
+        font-size: 35px;
+    }
+  .number {
+    transform: scale(0.9);
+    transform-origin: top left;
+
+  }
+  .map-img img {
+    width: 150%;
+    min-width: 110%;
+  }
+  .map-img  {
+    margin-top: -50px;
+    margin-left: 10px;
+  }
+}
+@media (max-width: 1400px) {
+    .list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+        margin-left: 50px;
+
+    }
+    .info {
+        padding: 0;
+    }
+    .number {
+        transform: scale(0.8);
+        transform-origin: top left;
+    
+        width: 420px;
+    }
+    .title-map {
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 978px) {
+    .list {
+        
+
+    }
+    .map-img {
+        width: 80%;
+    }
+    .info {
+    }
+    .number {
+margin: 0;
+        width: 420px;
+    }
+    .title-map {
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: 720px) {
+    .list {
+        
+
+    }
+    .map-img {
+        width: 90%;
+        padding: 0 30px;
+    }
+    .info {
+    }
+    .number {
+margin: 0;
+        width: 420px;
+    }
+    .title-map {
+        margin: 0 auto;
+        padding-bottom: 50px;
+    }
+    .container {
+        margin: 0;
+    }
+}
+
+@media (max-width: 587px) {
+    .list {
+        
+
+    }
+    .map-img {
+        width: 90%;
+        padding: 0 10px;
+    }
+    .info {
+    }
+    .number {
+margin: 0;
+
+        width: 420px;
+    }
+    .title-map {
+        margin: 0 auto;
+        font-size: 25px;
+        padding-bottom: 40px;
+    }
+    .container {
+        margin: 0;
+    }
+    .indented {
+        display: inline-block;
+        padding-left: 65px;
+      }
+}
+
+@media (max-width: 435px) {
+    
+    .map-img {
+        width: 90%;
+        margin-top: -30px;
+    }
+    
+    .number {
+        transform: scale(0.6);
+        transform-origin: top left;
+    }
+    .title-map {
+        margin: 0 auto;
+        font-size: 22px;
+        padding-bottom: 40px;
+    }
+    .container {
+        margin: 0;
+    }
+    .indented {
+        display: inline-block;
+        padding-left: 35px;
+      }
+}
+@media (max-width: 365px) {
+.title-map {
+    margin-left: 30px;
+}
+.number {
+    transform: scale(0.5);
+    transform-origin: top left;
+    width: 600px;
+}
+}

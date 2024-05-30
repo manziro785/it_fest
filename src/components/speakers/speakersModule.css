@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(#652B98, #C7168F, #C7168F, #EB4724, #F49A0E);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+} */
+
+/* @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+} */
+
+.speakers {
+    text-align: center;
+    color: white;
+    padding: 0 20px 20px 20px;
+    border-radius: 15px;
+    max-width: 1950px; /* Ensure the content doesn't stretch too wide */
+    margin: 0 auto; /* Center align */
+}
+.text-center {
+    margin-top: 0;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid layout */
+    gap: 20px;
+    padding: 20px 50px;
+}
+.text-center div {
+    font-size: 45px;
+    margin-top: 100px;
+    /* max-width: 1400px; */
+    width: fit-content;
+}
+.small-title-speakers {
+    display: none;
+}
+.big-title-speakers {
+    display: flex;
+    flex-direction: column;
+    margin-left: -260px;
+    margin-bottom: 30px;
+}
+.big-title-speakers span{
+margin-left: 420px;
+}
+@media (max-width: 1400px) {
+    .big-title-speakers {
+        transform: scale(0.9);
+            
+        transform-origin: center center;
+
+    }
+    /* .big-title-speakers {
+        display: none;
+    }
+    .small-title-speakers {
+        display: block;
+    }
+    .text-center div {
+        font-size: 40px;
+    } */
+
+}
+@media (max-width: 1200px) {
+    .big-title-speakers {
+        transform: scale(0.7);
+            
+        transform-origin: center center;
+
+    }
+}
+@media (max-width: 1162px) {
+      .big-title-speakers {
+        display: none;
+    }
+    .small-title-speakers {
+        display: block;
+    }
+    .text-center div {
+        font-size: 40px;
+    }
+}
+@media (max-width: 602px) {
+    
+  .small-title-speakers {
+      display: block;
+  }
+  .text-center div {
+      font-size: 30px;
+  }
+}
+@media (max-width: 402px) {
+    
+    .small-title-speakers {
+        display: block;
+    }
+    .text-center div {
+        font-size: 20px;
+    }
+  }
+  @media (max-width: 602px) {
+    
+    .speaker-card h3 {
+        font-size: 18px !important;
+
+    }
+    .speaker-card p {
+        font-size: 15px !important;
+
+    }
+  }
+
+  @media (max-width: 510px) {
+    
+    .speakers {
+        margin-top: -60px;
+    }
+  
+  }
+  @media (max-width: 450px) {
+    
+    .speakers {
+        margin-top: -180px;
+    }
+  }
+.text-center  {
+  display: flex;
+  justify-content: center;
+}
+.speaker-card {
+    text-align: center;
+
+}
+
+.speaker-card:hover {
+
+}
+
+.speaker-card img {
+    max-width: 100%; /* Ensure the image stays within its container */
+    height: auto; /* Preserve aspect ratio */
+    display: block;
+    width: 100%;
+    margin: 0 auto 10px;
+}
+.speaker-card h3 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.speaker-card p {
+    font-weight: 700;
+    color: #D6D6D6;
+}
+
+
+
+.speakers-desc {
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .speakers-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust grid for smaller screens */
+    }
+}
+
+/* Single column layout for small screens */
+@media screen and (max-width: 427px), screen and (max-width: 375px), screen and (max-width: 320px) {
+    .speakers-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 50px;
+    }
+}

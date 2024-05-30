@@ -1,0 +1,12 @@
+.partner-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-partners {
+    display: flex;
+    justify-content: center;
+}
+.partner {
+    width: fit-content;
+}
