@@ -67,7 +67,7 @@ body {
     justify-content: flex-start;
     align-items: flex-start;
     color: white;
-    padding: 20px;
+    padding: 50px;
     box-sizing:border-box;
 }
 .section-overlay1 {
@@ -83,19 +83,19 @@ body {
     /* justify-content: center; */
     align-items: flex-start;
     color: white;
-    padding: 20px;
+    padding: 50px;
 }
 
 .section-overlay h2, .section-overlay1 h2 {
     margin: 30px 0;
-    font-size: 54px;
+    font-size: 64px;
 }
 
 .section-overlay p, .section-overlay1 p 
     {
     margin: 20px 0;
     color: #D6D6D6;
-    font-size: 38px;
+    font-size: 36px;
 }
 @media (max-width: 1040px) {
     .section-overlay p, .section-overlay1 p 
@@ -128,14 +128,53 @@ font-size: 38px !important;
 padding-top: 0 !important;
 margin-top: 0 !important;
     }
+    .section-overlay  ,    .section-overlay1  {
+padding: 20px;
+    }
     
 }
 
+.container-over {
+     margin-top: 30px;
+}
+
+
+@media (max-width: 2295px) {
+
+        .section-overlay button ,     .section-overlay1 button{ 
+            padding-bottom: 20px !important;             
+            }
+}
+@media (max-width: 2245px) {
+
+    .section-overlay h2 ,     .section-overlay1 h2{ 
+        font-size: 50px;             
+        }
+        .section-overlay p ,     .section-overlay1 p{ 
+            font-size: 40px;             
+            }
+}
+@media (max-width: 2135px) {
+
+    .section-overlay  ,     .section-overlay1 { 
+        padding-top: 0;          
+        }
+}
+@media (max-width: 1807px) {
+
+    .section-overlay h2 ,     .section-overlay1 h2{ 
+        font-size: 42px;             
+        }
+        .section-overlay p ,     .section-overlay1 p{ 
+            font-size: 30px;             
+            }
+           
+}
 @media (max-width: 1550px) {
     .section-overlay p ,     .section-overlay1 p {
 
         margin: 20px 0;
-        font-size: 21px;
+        font-size: 24px;
         font-weight: 700;
     }
     .section-overlay h2 ,.section-overlay1 h2{
@@ -143,7 +182,66 @@ margin-top: 0 !important;
         font-size: 45px;
     }
     .section-overlay button ,     .section-overlay1 button         {
-font-size: 40px !important;
+font-size: 35px !important;
+padding-top: 0 !important;
+margin-top: 0 !important;
+display: flex;
+margin-bottom: 0px !important;
+
+    }
+    
+}
+@media (max-width: 1520px) {
+    .section-overlay p ,     .section-overlay1 p {
+
+        margin: 20px 0;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .section-overlay h2 ,.section-overlay1 h2{
+        margin: 30px 0;
+        font-size: 39px;
+    }
+    .section-overlay button ,     .section-overlay1 button         {
+font-size: 30px !important;
+padding-top: 0 !important;
+margin-top: 0 !important;
+display: flex;
+    }
+    
+}
+@media (max-width: 1350px) {
+    .section-overlay p ,     .section-overlay1 p {
+
+        margin: 20px 0;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    .section-overlay h2 ,.section-overlay1 h2{
+        margin: 30px 0;
+        font-size: 32px;
+    }
+    .section-overlay button ,     .section-overlay1 button         {
+font-size: 30px !important;
+padding-top: 0 !important;
+margin-top: 0 !important;
+display: flex;
+    }
+    
+}
+@media (max-width: 1185px) {
+    .section-overlay p ,     .section-overlay1 p {
+
+        margin: 20px 0;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .section-overlay h2 ,.section-overlay1 h2{
+        margin: 30px 0;
+        font-size: 32px;
+    }
+    .section-overlay button ,     .section-overlay1 button         {
+font-size: 30px !important;
 padding-top: 0 !important;
 margin-top: 0 !important;
 display: flex;
@@ -154,11 +252,11 @@ display: flex;
     .section-overlay p ,    .section-overlay1 p {
 
         margin: 15px 0;
-        font-size: 18px;
+        font-size: 19px;
     }
     .section-overlay h2,     .section-overlay1 h2        {
         margin: 20px 0;
-        font-size: 21px;
+        font-size: 27px;
     }
     .section-overlay button,     .section-overlay1 button {
 
@@ -206,62 +304,59 @@ margin-top: 0 !important;
     
 }
 
-.section-overlay button ,.section-overlay1 button {
-
+.section-overlay button, .section-overlay1 button {
     background: none;
     border: none;
-    padding: 18px 0;
-    margin-top: 30px;
-    padding-bottom: 30px;
     color: #FF862E;
-    font-size: 48px;
     cursor: pointer;
     border-radius: 5px;
     text-decoration: none;
     position: relative;
     width: 100%;
     position: absolute;
+    font-size: 60px;
+    margin-bottom: 50px;
     bottom: 0;
     text-align: left;
     transition: color 0.3s ease;
 }
 
+@media (max-width: 1300px) {
+    .section-overlay button::after, .section-overlay1 button::after {
+    display: none;
+    }
+    .section-overlay button:hover, .section-overlay1 button:hover {
+        color: #FF862E;
+        text-decoration: underline;
+    }
+    
 
-.section-overlay button:hover,.section-overlay1 button:hover 
-    {
+}
+.section-overlay button::after, .section-overlay1 button::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #FF862E;
+    left: 0;
+    bottom: 15px;
+    transition: width 0.5s ease;
+}
+
+.section-overlay button:hover::after, .section-overlay1 button:hover::after {
+    width: 40%;
+}
+
+.section-overlay button:hover, .section-overlay1 button:hover {
     color: #FF862E;
     /* text-decoration: underline; */
 }
 
 
-@media (min-width: 1500px) {
-    .section-overlay button:hover,.section-overlay1 button:hover 
-    {
-    color: #FF862E;
-    text-decoration: underline;
-}
-.section-overlay button::after,.section-overlay1 button::after {
-    display: none;
-}
+@media (max-width) {
+    
 }
 
-.section-overlay button::after,.section-overlay1 button::after 
-    {
-    content: '';
-    position: absolute;
-    width: 30%;
-    height: 2px;
-    background-color: #FF862E;
-    left: 0;
-    top: 25px;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
-}
-
-.section-overlay button:hover::after ,.section-overlay1 button:hover::after {
-
-    transform: scaleX(1);
-}
 
 /* Media Queries */
 
@@ -286,7 +381,41 @@ margin-top: 0 !important;
 
         font-size: 1em;
     }
+    .section-overlay button ,     .section-overlay1 button {
+
+        margin-left: 40px;
+        font-size: 20px !important;
+        
+    }
 }
+@media (max-width: 740px) {
+   
+
+    .section-overlay, .section-overlay1 {
+        width: 75%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section-overlay h2 ,    .section-overlay1 h2 {
+
+        font-size: 1.8em;
+    }
+
+    .section-overlay p ,     .section-overlay1 p {
+
+        font-size: 1em;
+    }
+    .section-overlay button ,     .section-overlay1 button {
+
+        margin-left: 40px;
+        font-size: 20px !important;
+        
+    }
+    .container-over {
+        margin-top: -20px;
+    }
+}   
 
 /* Phones */
 @media (max-width: 600px) {
@@ -297,12 +426,16 @@ margin-top: 0 !important;
     .section-overlay,    .section-overlay1 {
 
         width: 100%;
+        height: 100% !important;
         padding: 15px;
         height: auto;
     }
-
+    .container-over {
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
     .section-overlay h2 ,    .section-overlay1 h2 {
-
+margin-top: 20px;
         font-size: 1.3em;
         margin-bottom: 10px;
     }
@@ -313,9 +446,11 @@ margin-top: 0 !important;
     }
 
     .section-overlay button ,    .section-overlay1 button {
-
-        font-size: 1.2em;
-        margin-bottom: 15px;
+margin-top: 20px ;
+        font-size: 1em;
+        margin-left: 28px;
+        
+        padding-bottom: 0 !important;
     }
 }
 
@@ -358,6 +493,11 @@ margin-top: 0 !important;
         .section-overlay p,        .section-overlay1 p {
 
             display: none;
+        }
+        .section-overlay button,        .section-overlay1 button {
+
+            font-size: 15px !important;
+            margin-bottom: 10px;
         }
     }
 

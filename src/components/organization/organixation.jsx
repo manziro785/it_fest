@@ -35,17 +35,17 @@ export default function Organixation() {
                 </a>
             </div>
         </div>
-        <div className="organization">
+        <div className="organization"id='organization'>
             <div className="title-org">
             Cпонсоры
             </div>
-            <div className="main-org1">
+            <div className="main-org1" >
                 <a href="https://www.kia-bishkek.kg/">
                 <img src="./src/assets/organization/Frame 51 (1).svg" alt="" />
                 </a>
             </div>
         </div>
-        <div className="organization">
+        <div className="organization" >
             <div className="title-org">
             Партнеры
             </div>

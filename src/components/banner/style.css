@@ -71,9 +71,21 @@ justify-content: space-between;
 
 z-index: 10;
 position: relative;
-    
 
 }
+.header-over1 {
+    margin: 0 auto;
+    max-width: 1950px;
+    padding: 0px;
+    position: relative;
+
+}
+.wrapper-regg {
+    background: linear-gradient(to right, #1c4c8eba, #182236b3);
+width: 100%;
+position: relative;
+}
+
 
 .header-logo img {
     margin-right: 21px;
@@ -535,6 +547,15 @@ margin: 0px 5px;
         transform: scale(0.7);
         transform-origin: center center;
 
+    }
+    .header-logo-link img {
+        width: 30px;
+    }
+    .menu-icon img {
+        width: 20px;
+    }
+    .header {
+        padding: 0;
     }
 }
 @media (max-width:520px) {

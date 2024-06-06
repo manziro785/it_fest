@@ -6,6 +6,16 @@ body {
 .header2 {
     background: linear-gradient(to right, #1c4c8eba, #182236b3);
     /* padding: 0px 10px; */
+    z-index: 11;
+    position: relative;
+   
+}
+
+.header-over1 {
+    /* display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    max-width: 1950px; */
     display: flex;
     padding: 5px 2px;
     justify-content: space-between;
@@ -121,6 +131,8 @@ border-radius:30px;
     }
     .registration-form {
         transform: scale(0.9);
+        padding-top: 60px;
+        padding-bottom: 50px;
     }
     .left-reg {
         margin-right: 0;
@@ -128,7 +140,12 @@ border-radius:30px;
     .right-reg {
         margin-right: 30px;
     }
+    .subm-reg {
+        display: flex;
+        justify-content: center;
+    }
 }
+
 @media (max-width: 560px) {
     .form-group input, .form-group select {
         width: 400px !important;
@@ -189,7 +206,8 @@ cursor: pointer;
 
 }
 .optioon:hover {
-color: #333
+color: #333;
+background-color: ""
 }
 
 .right-reg {
@@ -203,7 +221,7 @@ color : #657f98df;
 font-weight: 700;
 }
 .error {
-    color: #c9160d;
+    color: #CA4900;
     font-size: 20px;
     margin-left: 10px;
     margin-top: 5px;
@@ -220,7 +238,7 @@ font-weight: 700;
     flex-wrap: wrap;
     justify-content: center;
 }
-.submit-button {
+.submit-button, .submit-button2 {
     background: linear-gradient(to bottom, #6EB5F8, #005975);
     color: white;
     border: none;
@@ -235,9 +253,16 @@ height: 50px;
     align-items:center;
     transition: all 0.9s ease;
 }
-.submit-button:hover {
+.submit-button:hover, .submit-button2:hover {
     background: linear-gradient(to bottom, #5190cb, #013e50);
 
+}
+.submit-button2 {
+    display: flex;
+    justify-content: center;
+}
+.submit-button {
+    margin-top: 40px;
 }
 /* .registration-form::before {
     content: '';
@@ -253,6 +278,16 @@ height: 50px;
 @media (max-width: 768px) {
     .registration-form {
         padding: 15px;
+    }
+    .registration-form {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .btn-title-reg {
+        font-size: 60px;
+    }
+    .btn-title-reg2 {
+        font-size: 16px;
     }
 }
 
@@ -273,5 +308,34 @@ height: 50px;
     .submit-button {
         padding: 10px;
         font-size: 14px;
+    }
+}
+
+@media (max-width: 501px) {
+    
+    .submit-button {
+        padding: 10px;
+        padding-bottom: 40px;
+        font-size: 18px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 405px) {
+    
+    .submit-button {
+        padding: 10px;
+        padding-bottom: 40px;
+        font-size: 18px;
+        width: 300px;
+    }
+    .form-group input {
+        width: 200px;
+    }
+    .btn-title-reg {
+        font-size: 51px;
+    }
+    .btn-title-reg2 {
+        font-size: 10px;
     }
 }

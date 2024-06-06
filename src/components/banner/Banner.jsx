@@ -2,12 +2,22 @@ import React, {useState } from 'react'
 import './style.css'
 import './reset.css'
 import Header from '../header/Header'
+import bannervid from '../../assets/banner/video.mp4'
+import img1 from "../../assets/banner/cercle1.svg" 
+import img2 from "../../assets/banner/cercle2.svg" 
+import img3 from "../../assets/banner/cercle3.svg" 
+import img4 from "../../assets/banner/cercle4.svg" 
+import arr from "../../assets/banner/arrow 1 (1).svg"
+
 
 export default function Banner() {
    
+
+  
     
   return (
     <>
+     {/* style={{ backgroundImage: `url(${bgasia})` }} */}
 
 <Header/>
             {/* <main className="main">
@@ -42,7 +52,7 @@ export default function Banner() {
 
             <div className="main-wrapper-banner">
             <video className="video-background" autoPlay muted loop>
-        <source src="./src/assets/banner/video.mp4" type="video/mp4" />
+        <source src={bannervid} type="video/mp4" />
         {/* Your browser does not support the video tag. */}
       </video>
               <div className="container-banner">
@@ -69,10 +79,10 @@ export default function Banner() {
                   </div>
                 </div>
                 <div className="cercles">
-                  <img src="./src/assets/banner/cercle1.svg" alt="" />
-                  <img src="./src/assets/banner/cercle2.svg" alt="" />
-                  <img src="./src/assets/banner/cercle3.svg" alt="" />
-                  <img src="./src/assets/banner/cercle4.svg" alt="" />
+                  <img src={img1} alt="" />
+                  <img src={img2} alt="" />
+                  <img src={img3} alt="" />
+                  <img src={img4} alt="" />
 
 
 
@@ -85,7 +95,7 @@ export default function Banner() {
 Получите максимум удовольствия от участия в разных мероприятиях фестиваля!
 <div className="btn-know-more" onClick={() => scrollToElement(document.getElementById('sections1'), 1000)} >
 Узнать больше
-<img src="./src/assets/banner/arrow 1 (1).svg" alt="" />
+<img src={arr} alt="" />
 </div>
                   </div>
                   <div className="card">
@@ -94,7 +104,7 @@ export default function Banner() {
 Зарегестрируйтесь на наш фестиваль и получите массу удовольстия и положительных эмоций!
 <a href='/register 'className="btn-know-more">
 Зарегестрироваться
-<img src="./src/assets/banner/arrow 1 (1).svg" alt="" />
+<img src={arr} alt="" />
 </a>
                   </div>
                 </div>

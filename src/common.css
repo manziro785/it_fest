@@ -24,6 +24,29 @@ body {
     /* justify-content: space-between; */
 
 }
+::-webkit-scrollbar-track {
+  background: transparent; /* Прозрачный фон трека */
+}
 
+::-webkit-scrollbar {
+  width: 12px; /* Ширина полосы прокрутки */
+  background: none; /* Цвет ползунка */
+  background-color: #fdfdfe; /* Цвет ползунка */
 
+border: none;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #492003; /* Цвет ползунка */
+  border-radius: 20px; /* Закругление углов ползунка */
+  border: 3px solid transparent; /* Прозрачная граница ползунка */
+}
 /* */
+::-webkit-scrollbar-thumb {
+  background-color: #21458e; /* Цвет ползунка */
+  border-radius: 20px; /* Закругление углов ползунка */
+  border: 3px solid #f1f1f1; /* Отступ внутри полосы прокрутки */
+}
+
+body {
+  -ms-overflow-style: none; /* Отключить стандартные полосы прокрутки */
+}

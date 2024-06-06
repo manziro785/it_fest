@@ -1,13 +1,13 @@
 .carousel-container {
     position: relative;
-    width: calc(100% - 500px); /* Adjust the width to account for padding */
-    margin: 0 auto; /* Center the carousel */
+    width: calc(100% - 500px); 
+    margin: 0 auto; 
     margin-top: 100px;
     
   }
   @media (max-width: 2000px) {
     .carousel-container {
-      width: calc(100% - 160px); /* Adjust the width to account for padding */
+      width: calc(100% - 160px); 
 
     }
 
@@ -23,23 +23,23 @@
   
   .carousel {
     overflow: hidden;
-    padding: 0 80px; /* Add padding to create space on the sides */
-    box-sizing: border-box; /* Ensure padding is included in the width calculation */
+    padding: 0 80px; 
+    box-sizing: border-box; 
   }
   
   .carousel__track {
     display: flex;
-    animation: scroll 22s linear infinite;
+    animation: scroll 700s linear infinite;
   }
   
   .carousel__track.paused {
-    animation-play-state: paused; /* Pause the animation */
+    animation-play-state: paused; 
   }
   
   .carousel__slide {
     flex: 0 0 auto;
     box-sizing: border-box;
-    padding: 0 8px; /* Add padding to adjust spacing */
+    padding: 0 8px; 
   }
   
   .carousel__track img {
@@ -95,8 +95,6 @@
       transform-origin: center center;
     }
     .carousel__track {
-        /* transform: scale(0.6);
-        transform-origin: center center; */
 
     }
     .carousel-container {
@@ -173,7 +171,7 @@
     .carousel {
         transform: scale(0.5);
         width: 178%;
-        margin-left: -175px;
+        margin-left: -165px;
         transform-origin: center center;
     
     }
@@ -208,13 +206,12 @@
     @media (max-width: 341px) {
       .carousel {
           transform: scale(0.3);
-          width: 301%;
+          width: 290%;
           margin-left: -310px;
           transform-origin: center center;
       
       }
       .carousel-container {
-        /* margin-top: -310px; */
       }
     }
  
@@ -254,7 +251,7 @@
       transform: translateX(0);
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateX(-2000%);
     }
   }
   

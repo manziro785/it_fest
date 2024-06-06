@@ -60,17 +60,44 @@ const RegFirst = () => {
     return (
         <>
            <header className="header2">
-          <button className="header-wrapper" onClick={handleRedirect}>
-                        <img src="./src/assets/auth/arrowtail 3.svg" alt="" />
-            Предыдущий этап
-          </button>
-          
-        </header>
+      <div className="header-over1"> 
+        <button className="header-wrapper" onClick={handleRedirect} style={{ display: 'flex', alignItems: 'center' }}>
+          <img src="./src/assets/auth/arrowtail 3.svg" alt="arrow back" style={{ width: '25px' }} />
+          На главную
+        </button>
+        <div className="image">
+          <div className="header-image">
+            <a target="_blank" href="https://web.whatsapp.com/">
+              <img src="./src/assets/banner/item1.svg" alt="WhatsApp" />
+            </a>
+          </div>
+          <div className="header-image">
+            <a target="_blank" href="https://www.instagram.com/">
+              <img src="./src/assets/banner/item2.svg" alt="Instagram" />
+            </a>
+          </div>
+          <div className="header-image">
+            <a target="_blank" href="https://web.telegram.org/">
+              <img src="./src/assets/banner/item3.svg" alt="Telegram" />
+            </a>
+          </div>
+        </div>
+        </div>
+      </header>
+
             <div className="registration-container">
                 <div className="overlay"></div>
 
-                <h1   className= 'btn-title-reg' style={{ alignItems: 'center', justifyContent: 'center', color: 'white', zIndex: '1' }}>РЕГИСТРАЦИЯ</h1>
-                <form onSubmit={handleSubmit} className="registration-form">
+                <h1 className='btn-title-reg' style={{ alignItems: 'center', justifyContent: 'center', color: 'white', zIndex: '1', marginBottom: '0px' }}>РЕГИСТРАЦИЯ</h1>
+        <h2 className='btn-title-reg2' style={{ alignItems: 'center', justifyContent: 'center', color: 'white', zIndex: '1', marginBottom: '10px' }}>Заполнение общей информации</h2>
+        <div className="cercles-reg">
+          <div className="first-reg"></div>
+          <div className="second-reg"></div>
+        </div>                <form onSubmit={handleSubmit} className="registration-form">
+
+            <div className="tittle-check">
+            Введите шестизначный код, который был отправлен на вашу почту
+            </div>
                     <div className="code-inputs">
                         {code.map((digit, index) => (
                              <input
@@ -85,8 +112,12 @@ const RegFirst = () => {
                         />
                     ))}
                 </div>
-                {error && <p style={{ color: 'red', alignItems: 'center', justifyContent: 'center' }}>{error}</p>}
-                <button type="submit" className="submit-button">Подтвердить</button>
+                <div className="err-p">
+                {error && <p style={{color: '#CA4900',fontSize: '20px', alignItems: 'center', justifyContent: 'center', fontWeight: '700' }}>{error}</p>}
+                </div>
+               <div className="button-subm">
+                <button type="submit" className="submit-button2">Подтвердить</button>
+                </div>
             </form>
         </div>
     </>

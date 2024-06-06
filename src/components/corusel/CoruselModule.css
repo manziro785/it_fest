@@ -415,13 +415,15 @@
     {
         transform: scale(0.7);
         transform-origin: top center;
-        margin-top: 5px;
+        margin-top: -70px;
         margin-left: 50px;
+        margin-bottom: 20px;
 
     }
     .title-corusel {
         transform: scale(0.4);
         transform-origin: center center;
+        margin-left: -50px;
 
     }
     .text-container {

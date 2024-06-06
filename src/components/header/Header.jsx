@@ -66,20 +66,21 @@ export default function Header() {
                 </div>
                 <nav className="header-nav">
                     <ul className="header-list">
-                        <li className="header-item">
+                        {/* <li className="header-item">
                             <div  className="header-link" onClick={() => scrollToElement(document.getElementById('carousel'), 1000)} style={{paddingTop: '0', cursor: 'pointer'}}>ОБЗОР</div>
+                        </li> */}
+                        
+                        <li className="header-item">
+                            <div className="header-link" onClick={() => scrollToElement(document.getElementById('sections1'), 1000)} style={{paddingTop: '0', cursor: 'pointer'}}>СЕКЦИИ</div>
                         </li>
                         <li className="header-item">
                             <div  className="header-link"onClick={() => scrollToElement(document.getElementById('speakers'), 1000)} style={{cursor: 'pointer'}}>ГОСТИ</div>
                         </li>
                         <li className="header-item">
-                            <div className="header-link" onClick={() => scrollToElement(document.getElementById('sections1'), 1000)} style={{paddingTop: '0', cursor: 'pointer'}}>СЕКЦИИ</div>
-                        </li>
-                        <li className="header-item">
                         <div className="header-link" onClick={() => scrollToElement(document.getElementById('map'), 1000)} style={{paddingTop: '0', cursor: 'pointer'}}>КАРТА</div>
                         </li>
                         <li className="header-item">
-                            <div  className="header-link" onClick={() => scrollToElement(document.getElementById('sections1'), 1000)} style={{paddingTop: '0', cursor: 'pointer'}}>ПАРТНЕРЫ</div>
+                            <div  className="header-link" onClick={() => scrollToElement(document.getElementById('organization'), 1000)} style={{paddingTop: '0', cursor: 'pointer'}}>ПАРТНЕРЫ</div>
                         </li>
                         <li className="header-item">
                             <div  className="header-link"onClick={() => scrollToElement(document.getElementById('footer'), 3000)} style={{cursor: 'pointer'}}>КОНТАКТЫ</div>
@@ -111,12 +112,12 @@ export default function Header() {
         <div className="btn-close" onClick={closeMenu}>
 <img src="./src/assets/banner/Frame 50 (1).svg" alt="" />
         </div>
-        <a href="section1" onClick={handleMenuClick}>ОБЗОР</a>
-        <a href="#section2" onClick={handleMenuClick}>ГОСТИ</a>
-        <a href="#section1" onClick={handleMenuClick}>СЕКЦИИ</a>
-        <a href="#section4" onClick={handleMenuClick}>КАРТА</a>
-        <a href="#section4" onClick={handleMenuClick}>ПАРТНЕРЫ</a>
-        <a href="#section4" onClick={handleMenuClick}>КОНТАКТЫ</a>
+        {/* <a href="section1" onClick={handleMenuClick}>ОБЗОР</a> */}
+        <a href="#section2" onClick={() => scrollToElement(document.getElementById('speakers'), 2000)} style={{cursor: 'pointer'}}>ГОСТИ</a>
+        <a href="#section1" onClick={() => scrollToElement(document.getElementById('sections1'), 2000)}>СЕКЦИИ</a>
+        <a href="#section4" onClick={() => scrollToElement(document.getElementById('map'), 2000)}>КАРТА</a>
+        <a href="#section4"  onClick={() => scrollToElement(document.getElementById('organization'), 2000)}>ПАРТНЕРЫ</a>
+        <a href="#section4" onClick={() => scrollToElement(document.getElementById('footer'), 3000)}>КОНТАКТЫ</a>
 
         <div className="socials">
         <a href="https://web.whatsapp.com/">
