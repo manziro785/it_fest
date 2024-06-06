@@ -1,6 +1,5 @@
 import React, {useState} from 'react'
 import './FooterModule.css'
-import icon1 from "./assets/common/icon (3).svg" 
 
 export default function FooterComp() {
   const [isCopied, setIsCopied] = useState(false);
@@ -44,7 +43,7 @@ export default function FooterComp() {
             {isCopied && 
               <div className="wrapper-message">
               <div className="copy-message">
-                <img src={icon} alt="" style={{marginRight: '10px'}} />
+                <img src="./src/assets/common/icon (3).svg" alt="" style={{marginRight: '10px'}} />
                 Номер телефона скопирован!
                 </div>
                 </div>
