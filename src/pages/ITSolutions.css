@@ -1,0 +1,229 @@
+.hero-container {
+    position: relative;
+    background-repeat:no-repeat ;
+   /* Adjust the path to your background image */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+}
+
+.text-overlay1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 0;
+
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    z-index: 1;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 50%;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+}
+
+.title-section {
+    font-size: 3em; /* Increased size */
+    font-weight: bold; /* Made bold */
+    margin-bottom: 20px;
+}
+
+.text-overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.text-overlay p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.register-button {
+    background: rgb(28, 76, 142);
+    background: linear-gradient(90deg, rgba(28, 76, 142, 1) 0%, rgba(68, 107, 160, 1) 42%, rgba(28, 76, 142, 1) 84%, rgba(38, 51, 78, 1) 100%);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+    border-radius: 25px;
+    width: 100%; /* Full width */
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.register-button:hover{
+    transform: scale(1.05);
+}
+.prizes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.prize-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.place {
+    color: white;
+    font-size: 1.5em; /* Increased size */
+    font-weight: bold; /* Made bold */
+    margin-bottom: 10px; /* Add space between place and amount */
+    text-align: center;
+}
+
+.prize {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px 30px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    font-size: 1.2em;
+}
+
+.prize1 {
+    background: linear-gradient(90deg, rgba(189, 132, 16, 1) 0%, rgba(243, 205, 82, 1) 50%, rgba(213, 162, 35, 1) 100%);
+}
+
+.prize2 {
+    background: linear-gradient(90deg, rgba(121, 121, 121, 1) 0%, rgba(213, 211, 212, 1) 50%, rgba(164, 164, 164, 1) 100%);
+}
+
+.prize3 {
+    background: linear-gradient(90deg, rgba(159, 103, 42, 1) 0%, rgba(229, 163, 87, 1) 50%, rgba(147, 93, 32, 1) 100%);
+}
+
+.prize .amount {
+    font-size: 1.5em; /* Increased size */
+    font-weight: bold; /* Made bold */
+}
+
+.amount1 {
+    color: #ffcc00;
+}
+
+.amount2 {
+    color: #c0c0c0;
+}
+
+.amount3 {
+    color: #cd7f32;
+}
+
+.competition-rules {
+    background: rgba(28, 76, 142, 1); /* Matches the color of the register button */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-content, .right-content {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .title-section {
+        font-size: 2.5em; /* Adjusted size for smaller screens */
+    }
+
+    .text-overlay p {
+        font-size: 1em;
+    }
+
+    .register-button {
+        font-size: 0.9em;
+    }
+
+    .prize {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    .place {
+        font-size: 1.3em; /* Adjusted size for smaller screens */
+    }
+
+    .prize .amount {
+        font-size: 1.3em; /* Adjusted size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .title-section {
+        font-size: 2em; /* Adjusted size for smaller screens */
+    }
+
+    .text-overlay p {
+        font-size: 0.9em;
+    }
+
+    .register-button {
+        font-size: 0.8em;
+    }
+
+    .prize {
+        width: 100%;
+        font-size: 0.9em;
+    }
+
+    .place {
+        font-size: 1.1em; /* Adjusted size for smaller screens */
+    }
+
+    .prize .amount {
+        font-size: 1.1em; /* Adjusted size for smaller screens */
+    }
+}

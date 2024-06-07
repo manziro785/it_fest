@@ -11,22 +11,17 @@ import Speakers from '../../components/speakers/speakers';
 import Section from '../../components/section/Section';
 import Organixation from '../../components/organization/organixation';
 import Map from '../../components/map/Map';
+import ITSolutions from "../itsection/Itsection.jsx";
+import Robot from "../robo/Robot.jsx";
+import Mobilo from "../mobilograhy/Mobilograhy.jsx";
 
 
 const MainPage = () => {
     return (
         <>
-        <Banner/>
-        <Corusel/> 
-        <CustomCarousel/>
-             <Speakers/>
-             <Section/> 
-<Map/>
-<Organixation/>
-             {/* <Sponsors/>   
-             <Partner/>         */}
-             <FooterComp/>
-
+            <ITSolutions/>
+            {/*<Mobilo/>*/}
+            {/*<ITSolutions/>*/}
         </>
     );
 };

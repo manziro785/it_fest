@@ -9,64 +9,72 @@ const sections = [
     title: "IT решения",
     description: "Турнир будет организован в формате хакатона, призванный обеспечить участников мероприятия необходимыми знаниями и навыками.",
     image: "./src/assets/section/hackathon.svg",
-    actionText: "Участвовать"
+    actionText: "Участвовать",
+    url: "/itsolve"
   },
   {
     id: 2,
     title: "Мобилография",
     description: "В секции «Мобилография» принимают участие творческие видео работы в форматах: рекламных роликов, интернет-видео, видео блоги.",
     image: "./src/assets/section/mobilo.svg",
-    actionText: "Участвовать"
+    actionText: "Участвовать",
+    url: "/mobilo"
   },
   {
     id: 3,
     title: "Кибербезопасность",
     description: "Секция: Кибербезопасность Целями проведения соревнования являются развитие CTF-движения в Кыргызстане.",
     image: "./src/assets/section/hacker.svg",
-    actionText: "Участвовать"
+    actionText: "Участвовать",
+    url: "/hacker"
   },
   {
     id: 4,
     title: "Киберспорт",
     description: "Секция: Киберспорт Турнир проводится с целью популяризации и развития киберспорта среди молодёжи и более старшего возраста",
     image: "./src/assets/section/kibersp.svg",
-    actionText: "Участвовать"
+    actionText: "Участвовать",
+    url: "/cyber"
   },
   {
     id: 5,
     title: "Дизайн и Анимация",
     description: "Команды от 3-5 человека ~ команда (интересующиеся мультяшными вебтунами, прошедшие обучение вебтунам и т.д.) за 24 часа создают электронный комикс (вебтун).",
     image: "./src/assets/section/animation.svg",
-    actionText: "Участвовать"
+    actionText: "Участвовать",
+    url: "/design"
   },
   {
     id: 6,
     title: "IT Экспо",
     description: "Данная секция представляет собой международную выставку, которая является символом индустриализации.",
     image: "./src/assets/section/expo.svg",
-    actionText: "Участвовать"
+    actionText: "Участвовать",
+    url: "/expo"
   },
   {
     id: 7,
     title: "Робототехника",
     description: "В рамках секции робототехники состоится серия этапных соревнований для детей в возрасте от 12 до 16 лет. Команды допускаются до трех участников",
     image: "./src/assets/section/robcomp.svg",
-    actionText: "Участвовать"
+    actionText: "Участвовать",
+    url: "/robot"
   },
   {
     id: 8,
     title: "Гонки на дронах",
     description: "Регламент гонок на дронах предоставляет возможность всем желающим пройти специальный маршрут с испытаниями",
     image: "./src/assets/section/drons.svg",
-    actionText: "Участвовать"
+    actionText: "Участвовать",
+    url: "/dron-race"
   },
 ];
 
 const Section = () => {
 
   const navigate = useNavigate();
-  const handleRedirect = () => {
-    navigate('/register');
+  const handleRedirect = (url) => {
+    navigate(url);
 };
 
   return (
@@ -81,7 +89,7 @@ const Section = () => {
               <h2>{section.title}</h2>
               <p>{section.description}</p>
             </div>
-            <button onClick={handleRedirect}>{section.actionText}</button>
+            <button onClick={() => handleRedirect(section?.url)}>{section.actionText}</button>
           </div>
         </div>
       ))}
