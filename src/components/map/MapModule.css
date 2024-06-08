@@ -149,9 +149,6 @@ body {
   }
 }
 @media (max-width: 1024px) {
-  .list {
-    width: 100%;
-  }
   .info {
     flex-direction: column;
     align-items: center;
